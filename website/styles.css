@@ -1,0 +1,466 @@
+/* styles.css */
+:root {
+    --primary-color: #007bff;
+    --primary-dark: #0056b3;
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo i {
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+  
+  .logo h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e7ef 100%);
+    padding: 80px 0;
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-content h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+  }
+  
+/* styles.css (continued) */
+.hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 80px 0;
+    background-color: white;
+  }
+  
+  .features h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: var(--dark-color);
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .feature-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+  }
+  
+  .feature-card p {
+    color: var(--secondary-color);
+  }
+  
+  /* How It Works Section */
+  .how-it-works {
+    padding: 80px 0;
+    background-color: #f0f5ff;
+  }
+  
+  .how-it-works h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: var(--dark-color);
+  }
+  
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .step {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .step-number {
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .step h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+  }
+  
+  .step p {
+    color: var(--secondary-color);
+  }
+  
+  /* Download Section */
+  .download {
+    padding: 80px 0;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .download h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+  }
+  
+  .download p {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+  }
+  
+  .download-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .download-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+  
+  .download-button.chrome-store {
+    background-color: var(--secondary-color);
+  }
+  
+  .download-button.chrome-store:hover {
+    background-color: #5a6268;
+  }
+  
+  .download-button i {
+    font-size: 20px;
+  }
+  
+  .download-note {
+    color: var(--secondary-color);
+  }
+  
+  /* FAQ Section */
+  .faq {
+    padding: 80px 0;
+    background-color: var(--light-color);
+  }
+  
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: var(--dark-color);
+  }
+  
+  .faq-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .faq-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+  }
+  
+  .faq-item p {
+    color: var(--secondary-color);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 50px 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .footer-logo i {
+    color: var(--primary-color);
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: white;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-social a {
+    color: #adb5bd;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    color: white;
+  }
+  
+  .footer-copy {
+    text-align: center;
+    border-top: 1px solid #495057;
+    padding-top: 20px;
+    color: #adb5bd;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .hero-content {
+      order: 1;
+    }
+    
+    .hero-image {
+      order: 0;
+      margin-bottom: 30px;
+    }
+    
+    .feature-card, .step {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px 0;
+    }
+    
+    .header-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    nav ul {
+      gap: 15px;
+    }
+    
+    .hero {
+      padding: 50px 0;
+    }
+    
+    .hero-content h2 {
+      font-size: 28px;
+    }
+    
+    .hero-content p {
+      font-size: 16px;
+    }
+    
+    .features, .how-it-works, .download, .faq {
+      padding: 50px 0;
+    }
+    
+    .features h2, .how-it-works h2, .download h2, .faq h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+    
+    .footer-logo, .footer-links, .footer-social {
+      justify-content: center;
+    }
+  }
